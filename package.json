@@ -1,0 +1,38 @@
+{
+  "name": "pluto-iptv-proxy",
+  "version": "2.0.0",
+  "description": "PlutoTV IPTV Proxy Server with automatic EPG and M3U8 updates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "pm2:start": "pm2 start index.js --name pluto-iptv-proxy",
+    "pm2:stop": "pm2 stop pluto-iptv-proxy",
+    "pm2:restart": "pm2 restart pluto-iptv-proxy",
+    "pm2:logs": "pm2 logs pluto-iptv-proxy"
+  },
+  "keywords": [
+    "iptv",
+    "pluto",
+    "epg",
+    "m3u8",
+    "proxy",
+    "streaming"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "request": "^2.88.2",
+    "moment": "^2.29.4",
+    "fs-extra": "^11.1.1",
+    "uuid": "^9.0.0",
+    "xmlbuilder2": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
